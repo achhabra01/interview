@@ -12,16 +12,6 @@ public class TwoSum {
      */
     public static int[] twoSum(int[] nums, int target) {
         // // Your solution will go here
-        // return new int[0]; // Placeholder return
-
-        Map<Long, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            long complement = (long) target - nums[i];
-            if (map.containsKey(complement)) {
-                return new int[] { map.get(complement), i };
-            }
-            map.put((long)nums[i], i); // Corrected line: cast nums[i] to long
-        }
-        throw new IllegalArgumentException("No two sum solution");
+        return new int[0]; // Placeholder return
     }
 }
