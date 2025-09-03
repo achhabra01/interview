@@ -3,6 +3,9 @@ package com.example.demo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.demo.java.TwoSum;
+
 import java.util.Arrays;
 import org.junit.jupiter.api.function.Executable;
 
