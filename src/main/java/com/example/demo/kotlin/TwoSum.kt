@@ -7,13 +7,36 @@ class TwoSum {
      * Exactly one solution
      * You may not use the same element twice.
      * Positive integers
-     * Sort is available
-     * Infinite data set
+     * Sort is unavailable
+     * Finite data set
      */
     
     fun twoSum(nums: IntArray, target: Int): IntArray {
             // Your solution will go here
-           
+            var prevNum = 0
+            var currentNum = 0 
+            var total = 0
+            val list = IntArray()
+
+            
+           for(val n: nums) {
+               currentNum = n
+
+               total =  currentNum + prevNum
+
+               if(target == total) {
+                   val prevIndex =  nums.indexOf(prevNum)
+                   val currentIndex = nums.indexOf(currentNum)
+                   list.add(prevIndex)
+                   list.add(currentIndex)
+                   break;
+               } else {
+                    prevNum = currentNum    
+               }
+            
+           }
+           return list
+
     }  
     
 }
